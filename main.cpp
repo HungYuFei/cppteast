@@ -1,18 +1,17 @@
-#include <iostream>
-using namespace std;
-
 int main() {
-    float fahrenheit, celsius;
-
-    // 輸入華氏溫度
-    cout << "請輸入華氏溫度: ";
-    cin >> fahrenheit;
-
-    // 華氏轉攝氏公式
-    celsius = (fahrenheit - 32) * 5 / 9;
-
-    // 輸出攝氏溫度
-    cout << "對應的攝氏溫度是: " << celsius << "°C" << endl;
+   
+    int score1, score2, score3;
+    cout << "請輸入3次分數(0~100): ";
+    cin >> score1 >> score2 >> score3;
+    double averageScore = (score1 + score2 + score3)/3;
+    if (score1 < 40 || score2 < 40 || score3 < 40) {
+        cout << "不及格\n";
+    } else if (averageScore >= 60) {
+        cout << "你及格\n";
+    } else if (averageScore < 60) {
+        cout << "不及格\n";
+    }
+    cout << "你的平均為: \a" << averageScore;
 
     return 0;
 }
