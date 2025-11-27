@@ -18,7 +18,7 @@ int main() {
     }
     cout << endl;
 
-    // ----選擇排序 (Selection Sort)----
+    // ---選擇排序 (Selection Sort)---
     for (int i = 0; i < N - 1; i++) {
         int minIndex = i;
 
